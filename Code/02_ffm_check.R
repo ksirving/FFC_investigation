@@ -84,7 +84,7 @@ ggplot_missing <- function(x){
                     labels = c("Present (67%)","Missing (33%)")) +
     theme_minimal() + 
     theme(axis.text.x  = element_text(angle=45, vjust=1, hjust = 1)) + #vjust=0.5
-    labs(title = "Low Colwells (< 0.2) missingness",x = "Functional Flow Metrics",
+    labs(title = "Low Colwells (< 0.25) missingness",x = "Functional Flow Metrics",
          y = "Observations")
 }
 
@@ -167,7 +167,7 @@ ggplot_missing <- function(x){
                     labels = c("Present (72%)","Missing (28%)")) +
     theme_minimal() + 
     theme(axis.text.x  = element_text(angle=45, vjust=1, hjust = 1)) + #vjust=0.5
-    labs(title = "High Colwells (> 0.8) missingness", x = "Functional Flow Metrics",
+    labs(title = "High Colwells (> 0.75) missingness", x = "Functional Flow Metrics",
          y = "Observations")
 }
 ?labs
